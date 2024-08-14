@@ -37,9 +37,11 @@
       */
       span.b1 {
         display: block;
+
         width: 250px;
+
         height: 250px;
-        background-color: pink;
+        background: blue;
       }
       /*
       4. ATTRIBUTE  SELECTOR SYNTAX
@@ -63,6 +65,35 @@
       * {
         border: 10px solid #000;
       }
+      /*
+      6. GROUP/COMBINATIONAL  SELECTOR SYNTAX
+      element1,element2, element3{
+      property:value ;
+      }
+      */
+      div,span#a1,span.b1,a[href="https://www.google.com"]
+      {
+        display: inline-block;
+      }
+      /*
+      7 . PESUDO ELEMENT SELECTOR SYNTAX ::
+      element::selector{
+      property:value;
+      }
+      */
+
+      h1::after {
+        content: url("https://media.tenor.com/IYI9fQ41PWQAAAAi/yolande.gif");
+      }
+      /*
+       8 . PESUDO CLASS SELECTOR SYNTAX :
+      element::selector{
+      property:value;
+      }
+      */
+      div#c1:hover {
+        background-color: green;
+      }
     </style>
   </head>
   <body>
@@ -70,5 +101,7 @@
     <span id="a1">ID SELECTOR IN CSS</span>
     <span class="b1"> CLASS SELECTOR IN CSS</span>
     <a href="https://www.google.com">ATTRIBUTE SELECTOR IN CSS</a>
+    <h1>PESUDO ELEMENT SELECTOR IN CSS ::</h1>
+    <div id="c1">PESUDO CLASS SELECTOR IN CSS :</div>
   </body>
 </html>
